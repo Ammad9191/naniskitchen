@@ -1,29 +1,31 @@
 /**
  * Food photography assets with reliable local high-resolution files and remote fallbacks.
  */
+const publicImage = (filename) => `${import.meta.env.BASE_URL}images/${filename}`;
+
 export const images = {
   hero: 'https://images.unsplash.com/photo-1701579231305-d84d8afef6a9?auto=format&fit=crop&w=1400&q=80',
-  breakfast: '/images/breakfast.jpg',
-  dinner: '/images/dinner_image.jpg',
-  roti: '/images/plain_roti.jpg',
-  paratha: '/images/plain_paratha.jpg',
-  alooParatha: '/images/aloo_paratha.jpg',
-  omlateParatha: '/images/omlate_pratha.jpg',
-  parathaFryEgg: '/images/paratha_fryegg.jpg',
-  tea: '/images/tea_image.jpg',
+  breakfast: publicImage('breakfast.jpg'),
+  dinner: publicImage('dinner_image.jpg'),
+  roti: publicImage('plain_roti.jpg'),
+  paratha: publicImage('plain_paratha.jpg'),
+  alooParatha: publicImage('aloo_paratha.jpg'),
+  omlateParatha: publicImage('omlate_pratha.jpg'),
+  parathaFryEgg: publicImage('paratha_fryegg.jpg'),
+  tea: publicImage('tea_image.jpg'),
   rice: 'https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?auto=format&fit=crop&w=900&q=80',
-  biryani: '/images/chicken_biryani.jpg',
-  curry: '/images/chicken_korma.jpg',
-  karahi: '/images/chicken_karahi.jpg',
-  palakChicken: '/images/palak_chicken.jpg',
-  vegRice: '/images/vegetable_rice.jpg',
-  mixSabzi: '/images/mix_sabzi.jpg',
+  biryani: publicImage('chicken_biryani.jpg'),
+  curry: publicImage('chicken_korma.jpg'),
+  karahi: publicImage('chicken_karahi.jpg'),
+  palakChicken: publicImage('palak_chicken.jpg'),
+  vegRice: publicImage('vegetable_rice.jpg'),
+  mixSabzi: publicImage('mix_sabzi.jpg'),
   special: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=80',
   about: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80',
-  frozenFood: '/images/frozen_food.jpg',
-  chickenNuggets: '/images/chicken_nigates.jpg',
-  chickenKofta: '/images/chicken_kofta.jpg',
-  shamiKabab: '/images/shami_kabab.jpg',
+  frozenFood: publicImage('frozen_food.jpg'),
+  chickenNuggets: publicImage('chicken_nigates.jpg'),
+  chickenKofta: publicImage('chicken_kofta.jpg'),
+  shamiKabab: publicImage('shami_kabab.jpg'),
 };
 
 export const imageAlts = {
